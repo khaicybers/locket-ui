@@ -1,10 +1,21 @@
 import React from "react";
 import MockupiPhone from "@/components/ui/MockupiPhone";
 import FeatureList from "@/components/ui/FeatureList";
+import Galaxy from '@/components/magicui/Galaxy';
 
 export default function AboutLocketDio() {
   return (
-    <section className="min-h-screen bg-base-200 text-base-content p-6">
+    <div className="relative flex flex-col items-center justify-center min-h-screen w-full text-center">
+            <Galaxy
+            mouseRepulsion={true}
+            mouseInteraction={false}
+            density={1.5}
+            glowIntensity={0.6}
+            saturation={1}
+            hueShift={240}
+            className="absolute inset-0 z-0 pointer-events-none"
+          />
+      <section className="min-h-screen bg-base-200 text-base-content p-6">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold mb-6 text-center text-purple-700">
           Giới thiệu về <span className="text-base-content">Locket Dio</span>
@@ -19,7 +30,7 @@ export default function AboutLocketDio() {
           <div className="w-full flex justify-center md:scale-90">
             <MockupiPhone />
           </div>
-          <div className="-mt-7">
+          <div className="-mt-7 md:scale-90">
             <FeatureList />
           </div>
         </div>
@@ -42,5 +53,7 @@ export default function AboutLocketDio() {
         </div>
       </div>
     </section>
+    </div>
+
   );
 }

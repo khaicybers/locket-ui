@@ -2,6 +2,14 @@ import { lazy, Suspense, useState } from "react";
 import { Download, UserPlus } from "lucide-react";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import { BoxReveal } from "@/components/magicui/box-reveal";
+import { Highlighter } from "@/components/magicui/highlighter";
+import { NumberTicker } from "@/components/magicui/number-ticker";
+import Galaxy from '@/components/magicui/Galaxy';
+import { Marquee } from "@/components/magicui/marquee";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+
+
 const NotificationPrompt = lazy(() => import("@/components/ui/NotificationPrompt"));
 const FeatureCardMarquee = lazy(() => import("@/components/ui/Marquee/FeatureCardMarquee"));
 const StepsSection = lazy(() => import("./StepsSection"));
@@ -10,7 +18,18 @@ const Home = () => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="flex flex-col py-5 items-center justify-center min-h-screen w-full text-center bg-gradient-to-r from-blue-400 to-purple-500">
+    
+    <div className="relative flex flex-col items-center justify-center min-h-screen w-full text-center">
+        <Galaxy
+        mouseRepulsion={true}
+        mouseInteraction={false}
+        density={1.5}
+        glowIntensity={0.6}
+        saturation={1}
+        hueShift={240}
+        className="absolute inset-0 z-0 pointer-events-none"
+      />
+
       <section className="w-full max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-0 gap-x-12 items-start">
           {/* LEFT */}
@@ -36,26 +55,25 @@ const Home = () => {
                 ))}
               </span>
             </h2>
-
             <p className="text-white/90 text-base md:text-lg leading-relaxed">
-              Trải nghiệm "Locket Camera" ngay trên trình duyệt! Ghi lại khoảnh
-              khắc, thêm caption cực chất và chia sẻ tức thì chỉ với vài thao
+              <BoxReveal>Trải nghiệm "Locket Camera" </BoxReveal><BoxReveal>ngay trên trình duyệt! Ghi lại khoảnh
+              khắc, thêm caption cực chất và chia sẻ tức thì chỉ với vài thao</BoxReveal>
               tác đơn giản. Hoặc thêm ứng dụng vào màn hình chính của bạn.
             </p>
 
             <p className="text-white text-base md:text-lg font-medium animate-fade-in delay-200">
-              Bạn cần đăng nhập để sử dụng chức năng trên trang này!
+              <BoxReveal>Bạn cần đăng nhập để sử dụng chức năng trên trang này!</BoxReveal>
             </p>
             <p className="text-white/60 text-sm italic">
-              Locket Dio là một dự án cá nhân hoạt động độc lập. Mọi hoạt động
-              trên trang không liên kết với bất kỳ bên thứ ba nào, trừ khi có
+              <Highlighter action="underline" color="#FF9800">Locket Dio là một dự án</Highlighter>{" "} cá nhân hoạt động độc lập. {" "}<Highlighter action="highlight" color="#87CEFA">Mọi hoạt động
+              trên trang không liên kết</Highlighter> với bất kỳ bên thứ ba nào, trừ khi có
               thông báo từ Dio.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-2 animate-fade-in delay-400">
               <Link
                 to={"/login"}
-                className="px-8 py-3 bg-white text-blue-600 font-semibold text-base md:text-lg rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+                className="px-8 py-3 rotate-[3deg] gradient-effect text-white font-semibold text-base md:text-lg rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105"
               >
                 Login now
               </Link>
@@ -92,6 +110,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Tính năng nổi bật
             </h2>
+            
             <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
               Khám phá những tính năng tuyệt vời giúp bạn tạo ra và chia sẻ
               khoảnh khắc đáng nhớ.
@@ -116,41 +135,58 @@ const Home = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            {[
-              {
-                number: "13.5K+",
-                label: "Người dùng hoạt động",
-                color: "from-blue-400 to-cyan-400",
-              },
-              {
-                number: "20K+",
-                label: "Ảnh & Video đã tạo",
-                color: "from-purple-400 to-pink-400",
-              },
-              {
-                number: "20GB+",
-                label: "Dung lượng sử dụng mỗi ngày",
-                color: "from-green-400 to-emerald-400",
-              },
-              {
-                number: "4.3/5★",
-                label: "Đánh giá trung bình",
-                color: "from-yellow-400 to-orange-400",
-              },
-            ].map((stat, index) => (
-              <div key={index} className="text-center group">
-                <div
-                  className={`text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300`}
-                >
-                  {stat.number}
-                </div>
-                <p className="text-white/80 text-sm md:text-base font-medium">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
+<div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+  {[
+    {
+      value: 13500,
+      suffix: "+",
+      label: "Người dùng hoạt động",
+      color: "from-blue-400 to-cyan-400", // Blue to cyan
+      decimalPlaces: 1,
+    },
+    {
+      value: 20000,
+      suffix: "+",
+      label: "Ảnh & Video đã tạo",
+      color: "from-purple-400 to-indigo-400", // Purple to indigo
+      decimalPlaces: 0,
+    },
+    {
+      value: 20,
+      suffix: "GB+",
+      label: "Dung lượng sử dụng mỗi ngày",
+      color: "from-green-400 to-teal-400", // Green to teal
+      decimalPlaces: 0,
+    },
+    {
+      value: 4.3,
+      suffix: "/5★",
+      label: "Đánh giá trung bình",
+      color: "from-orange-400 to-pink-400", // Orange to pink
+      decimalPlaces: 1,
+    },
+  ].map((stat, index) => (
+    <div key={index} className="text-center group">
+      <div
+        className={`text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300`}
+      >
+        <NumberTicker
+          value={stat.value}
+          decimalPlaces={stat.decimalPlaces}
+          className={`inline-block bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}
+        />
+        {stat.suffix && (
+          <span className={`bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}>
+            {stat.suffix}
+          </span>
+        )}
+      </div>
+      <p className="text-white/80 text-sm md:text-base font-medium">
+        {stat.label}
+      </p>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 

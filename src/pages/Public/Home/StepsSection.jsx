@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
+import { ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function StepsSection() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -47,11 +50,32 @@ export default function StepsSection() {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-10 text-white max-w-3xl mx-auto">
-          <div className="inline-block px-5 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-white/20 shadow-sm mb-5">
-            <span className="text-sm font-semibold text-gray-700">
-              Hướng dẫn sử dụng
-            </span>
+          <div className="inline-block px-5 py-2 rounded-full border shadow-sm mb-5">
+            <div className="group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] ">
+              <span
+                className={cn(
+                  "absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]",
+                )}
+                style={{
+                  WebkitMask:
+                    "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                  WebkitMaskComposite: "destination-out",
+                  mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                  maskComposite: "subtract",
+                  WebkitClipPath: "padding-box",
+                }}
+              />
+              🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
+              <AnimatedGradientText className="text-sm font-medium">
+                Hướng dẫn sử dụng
+              </AnimatedGradientText>
+              <ChevronRight
+                className="ml-1 size-4 stroke-neutral-500 transition-transform
+        duration-300 ease-in-out group-hover:translate-x-0.5"
+              />
+            </div>
           </div>
+          
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
             Cách sử dụng đơn giản
           </h2>

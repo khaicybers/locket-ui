@@ -45,7 +45,7 @@ const features = [
 
 const FeatureList = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto z-20">
       <h2 className="text-3xl font-lovehouse font-bold text-center mb-2">
         ✨Locket Dio Feature
       </h2>
