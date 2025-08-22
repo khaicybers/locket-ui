@@ -21,11 +21,11 @@ const Home = () => {
     
     <div className="relative flex flex-col items-center justify-center min-h-screen w-full text-center">
         <Galaxy
-        mouseRepulsion={true}
-        mouseInteraction={false}
+        mouseRepulsion={false}
+        mouseInteraction={true}
         density={1.5}
-        glowIntensity={0.6}
-        saturation={0}
+        glowIntensity={0.3}
+        saturation={0.2}
         hueShift={240}
         className="absolute inset-0 z-0 pointer-events-none"
       />
