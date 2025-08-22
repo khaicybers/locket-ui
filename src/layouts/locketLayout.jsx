@@ -1,5 +1,5 @@
 import Sidebar from "@/components/Sidebar";
-import ContactSupportButton from '../components/ui/ContactSupportButton';
+import ContactSupportButton from "@/components/ui/ContactSupportButton";
 import { useFeatureVisible } from "@/hooks/useFeature";
 import React from "react";
 

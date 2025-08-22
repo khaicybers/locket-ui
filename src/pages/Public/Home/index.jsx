@@ -25,7 +25,7 @@ const Home = () => {
         mouseInteraction={false}
         density={1.5}
         glowIntensity={0.6}
-        saturation={1}
+        saturation={0}
         hueShift={240}
         className="absolute inset-0 z-0 pointer-events-none"
       />
