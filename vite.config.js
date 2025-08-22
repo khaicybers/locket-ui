@@ -11,7 +11,7 @@ import { defineConfig } from "vite";
        filename: "sw.js",
        injectRegister: "auto",
        injectManifest: {
-         maximumFileSizeToCacheInBytes: 0,
+         maximumFileSizeToCacheInBytes: 0, // Disable automatic caching
        },
        registerType: "autoUpdate",
        includeAssets: ["favicon.ico", "apple-touch-icon.png", "maskable-icon-512x512.png"],
@@ -49,6 +49,11 @@ import { defineConfig } from "vite";
              purpose: "any maskable",
            },
          ],
+       },
+       // Add glob patterns explicitly if needed
+       workbox: {
+         globPatterns: ["**/*.{js,css,html,png,jpg,svg,ico}"],
+         globIgnores: ["**/node_modules/**/*", "sw.js"], // Remove duplicate "sw.js"
        },
      };
 
