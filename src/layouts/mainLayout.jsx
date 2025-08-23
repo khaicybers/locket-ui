@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 // const Sidebar = lazy(() => import("@/components/Sidebar"));
 import LoadingPage from "../components/pages/LoadingPage";
 import Sidebar from "@/components/Sidebar";
-import { ContactSupportButton } from "@/components/ui/ContactSupportButton";
+import ContactSupportButton from "@/components/UI/ContactSupportButton";
 const CropImageStudio = lazy(() => import("@/components/common/CropImageStudio.jsx"));
 
 const DefaultLayout = ({ children }) => {
