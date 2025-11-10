@@ -2,10 +2,10 @@ import React, { useContext, useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ArrowLeft, Check, X, Info } from "lucide-react";
 import { AuthContext } from "../../../context/AuthLocket";
-import LoadingPage from "../../../components/pages/LoadingPage";
+import LoadingPage from "@components/pages/LoadingPage";
 import { API_URL } from "../../../utils";
 import * as services from "../../../services";
-import FeatureMarquee from "../../../components/ui/Marquee/FeatureMarquee";
+import FeatureMarquee from "@components/ui/Marquee/FeatureMarquee";
 
 const FEATURE_TOOLTIPS = {
   image_upload: "Cho phép tải lên hình ảnh cho bài viết",

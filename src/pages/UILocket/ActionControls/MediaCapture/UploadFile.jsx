@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useApp } from "../../../../context/AppContext";
-import { showToast } from "../../../../components/Toast";
+import { showToast } from "@components/Toast";
 import { ImageUp } from "lucide-react";
 
 const UploadFile = () => {

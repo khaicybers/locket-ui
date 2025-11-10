@@ -1,4 +1,4 @@
-import { showWarning } from "../../../components/Toast";
+import { showWarning } from "@components/Toast";
 import { API_VERSION, CLIENT_VERSION } from "../../../constants/versionInfo";
 
 export default function SettingsExtras() {

@@ -3,8 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useApp } from "../../../../../../context/AppContext";
 import { AuthContext } from "../../../../../../context/AuthLocket";
 import { PlusIcon, Trash2, X } from "lucide-react";
-import LoadingRing from "../../../../../../components/ui/Loading/ring";
-import { showError, showSuccess } from "../../../../../../components/Toast";
+import LoadingRing from "@components/ui/Loading/ring";
+import { showError, showSuccess } from "@components/Toast";
 
 export default function ImageCaptionSelector({ title }) {
   const navigate = useNavigate();

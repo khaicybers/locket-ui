@@ -6,7 +6,7 @@ import React, {
   useMemo,
 } from "react";
 import { AuthContext } from "../../../context/AuthLocket";
-import { showInfo, showSuccess } from "../../../components/Toast";
+import { showInfo, showSuccess } from "@components/Toast";
 import { ChevronDown, Info } from "lucide-react";
 import { GetListInfoPlans, GetUserData } from "../../../services";
 import { UserPlanCard } from "./UserPlanCard";
