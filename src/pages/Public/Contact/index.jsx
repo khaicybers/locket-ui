@@ -48,8 +48,8 @@ export default function Contact() {
             Liên hệ & Hỗ trợ
           </h1>
           <p className="mt-3 text-base-content/70 text-lg">
-            Kết nối với <span className="font-semibold">Đào Văn Đôi (Dio)</span>{" "}
-            - Tác giả <span className="font-semibold">Locket Dio</span>
+            Kết nối với <span className="font-semibold">Phan Duy Khải (Kane)</span>{" "}
+            - Tác giả <span className="font-semibold">Locket PD.Kane</span>
           </p>
         </div>
 
@@ -57,11 +57,11 @@ export default function Contact() {
           {/* Profile */}
           <div className="bg-base-100 w-full flex flex-col items-center justify-start p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-slideUp">
             <img
-              src="https://cdn.locket-dio.com/v1/images/avt/avtdio.webp"
-              alt="Đào Văn Đôi"
+              src="https://dkhaidev.vercel.app/me.png"
+              alt="Phan Duy Khải"
               className="w-28 h-28 rounded-full object-cover border-4 border-base-300 mb-4 shadow-md hover:scale-105 transition duration-300"
             />
-            <h2 className="text-xl font-bold">Đào Văn Đôi</h2>
+            <h2 className="text-xl font-bold">Phan Duy Khải</h2>
             <p className="mt-1 text-sm text-base-content/70">
               Full-stack Developer
             </p>
@@ -75,10 +75,10 @@ export default function Contact() {
                 <Mail size={18} /> Liên hệ chính
               </h3>
               <a
-                href="mailto:doibncm2003@gmail.com"
+                href="mailto:khaicybers@gmail.com"
                 className="btn btn-outline w-full justify-start gap-3 hover:scale-[1.02] transition"
               >
-                <Mail size={18} /> doibncm2003@gmail.com
+                <Mail size={18} /> khaicybers@gmail.com
               </a>
             </div>
 
@@ -118,7 +118,7 @@ export default function Contact() {
 
         {/* Footer */}
         <div className="text-center mt-10 text-sm text-base-content/60 animate-fadeIn">
-          © 2025 Locket Dio. Made with ❤️ by Đào Văn Đôi
+          © 2025 Locket PD.Kane. Made with ❤️ by Phan Duy Khải
         </div>
       </div>
     </div>

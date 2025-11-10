@@ -1,28 +1,19 @@
 import React from "react";
 import MockupiPhone from "@/components/ui/MockupiPhone";
 import FeatureList from "@/components/ui/FeatureList";
-import Galaxy from '@/components/magicui/Galaxy';
 
 export default function AboutLocketDio() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen w-full text-center">
-            <Galaxy
-            mouseRepulsion={true}
-            mouseInteraction={false}
-            density={1.5}
-            glowIntensity={0.6}
-            saturation={1}
-            hueShift={240}
-            className="absolute inset-0 z-0 pointer-events-none"
-          />
+
       <section className="min-h-screen bg-base-200 text-base-content p-6">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold mb-6 text-center text-purple-700">
-          Giới thiệu về <span className="text-base-content">Locket Dio</span>
+          Giới thiệu về <span className="text-base-content">Locket PD.Kane</span>
         </h1>
 
         <p className="text-lg leading-8 text-base-content/80 mb-10 text-center max-w-3xl mx-auto">
-          Locket Dio - nền tảng mở rộng tiện lợi cho Locket Widget giúp bạn chia
+          Locket PD.Kane - nền tảng mở rộng tiện lợi cho Locket Widget giúp bạn chia
           sẻ ảnh, video trực tiếp lên Locket với giao diện hiện đại và tiện lợi.
         </p>
 
@@ -35,22 +26,6 @@ export default function AboutLocketDio() {
           </div>
         </div>
 
-        <div className="mt-20 text-center">
-          <h2 className="text-2xl font-semibold mb-2">
-            🌐 Truy cập Locket Dio
-          </h2>
-          <p className="text-gray-700 mb-6">
-            Khám phá và bắt đầu chia sẻ những khoảnh khắc đáng nhớ của bạn.
-          </p>
-          <a
-            href="https://locket-dio.space/login"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-8 rounded-full shadow-md transition duration-300"
-          >
-            🚀 Truy cập ngay
-          </a>
-        </div>
       </div>
     </section>
     </div>

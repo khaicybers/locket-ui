@@ -92,21 +92,21 @@ const DonatePage = () => {
               <div className="flex justify-center items-center gap-2 mb-3 text-lg font-semibold text-base-content">
                 <Coffee className="w-5 h-5 text-amber-500" /> Give me a coffee
               </div>
-              <img
+              {/* <img
                 src="https://cdn.locket-dio.com/v1/images/qr/momo-locket-dio.png"
                 alt="QR Code Donate"
                 className="w-52 h-52 mx-auto rounded-lg shadow-sm"
-              />
+              /> */}
             </div>
             <div className="mt-4 space-y-2 text-sm text-base-content">
               <div className="p-3 border border-base-300 rounded">
-                NH: <span className="font-semibold">Bản Việt (BVBank)</span>
+                NH: <span className="font-semibold">MbBank</span>
               </div>
               <div className="p-3 border border-base-300 rounded">
-                STK: <span className="font-semibold">99MM25227MC0000247</span>
+                STK: <span className="font-semibold">432123456</span>
               </div>
               <div className="p-3 border border-base-300 rounded">
-                CTK: <span className="font-semibold">MOMO_DAO VAN DOI</span>
+                CTK: <span className="font-semibold">PHAN DUY KHAI</span>
               </div>
             </div>
             <p className="mt-4 text-base-content text-sm text-center">

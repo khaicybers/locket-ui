@@ -7,7 +7,7 @@ export default function Settings() {
     <div className="w-full min-h-screen bg-base-200 py-5 px-4 sm:px-6 lg:px-8 flex justify-center">
       <div className="w-full">
         <h1 className="text-4xl font-lovehouse font-semibold text-base-content mb-3 sm:mb-5 text-center">
-          Setting Locket Dio
+          Setting Locket PD.Kane
         </h1>
 
         {/* Chỉnh thành grid 4 cột */}

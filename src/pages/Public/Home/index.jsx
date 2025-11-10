@@ -9,7 +9,6 @@ import Galaxy from '@/components/magicui/Galaxy';
 import { Marquee } from "@/components/magicui/marquee";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
-
 const NotificationPrompt = lazy(() => import("@/components/ui/NotificationPrompt"));
 const FeatureCardMarquee = lazy(() => import("@/components/ui/Marquee/FeatureCardMarquee"));
 const StepsSection = lazy(() => import("./StepsSection"));
@@ -20,16 +19,6 @@ const Home = () => {
   return (
     
     <div className="relative flex flex-col items-center justify-center min-h-screen w-full text-center">
-        <Galaxy
-        mouseRepulsion={false}
-        mouseInteraction={true}
-        density={1.5}
-        glowIntensity={0.3}
-        saturation={0.2}
-        hueShift={240}
-        className="absolute inset-0 z-0 pointer-events-none"
-      />
-
       <section className="w-full max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-0 gap-x-12 items-start">
           {/* LEFT */}
@@ -65,7 +54,7 @@ const Home = () => {
               <BoxReveal>Bạn cần đăng nhập để sử dụng chức năng trên trang này!</BoxReveal>
             </p>
             <p className="text-white/60 text-sm italic">
-              <Highlighter action="underline" color="#FF9800">Locket Dio là một dự án</Highlighter>{" "} cá nhân hoạt động độc lập. {" "}<Highlighter action="highlight" color="#87CEFA">Mọi hoạt động
+              <Highlighter action="underline" color="#FF9800">Locket PD.Kane là một dự án</Highlighter>{" "} cá nhân hoạt động độc lập. {" "}<Highlighter action="highlight" color="#87CEFA">Mọi hoạt động
               trên trang không liên kết</Highlighter> với bất kỳ bên thứ ba nào, trừ khi có
               thông báo từ Dio.
             </p>
@@ -91,7 +80,7 @@ const Home = () => {
             <div className="relative transform hover:scale-105 transition-transform duration-500 pt-6.5">
               <img
                 src="https://cdn.locket-dio.com/v1/images/double-phone-view-locketdio.webp"
-                alt="Locket Dio WebApp Preview"
+                alt="Locket PD.Kane WebApp Preview"
                 onLoad={() => setLoaded(true)}
                 className={`
             w-full max-w-sm lg:max-w-sm xl:max-w-md h-auto object-contain drop-shadow-2xl
@@ -197,7 +186,7 @@ const Home = () => {
             Bắt đầu hành trình sáng tạo
           </h2>
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Cài đặt hoặc thêm Locket Dio vào màn hình chính ngay hôm nay và khám
+            Cài đặt hoặc thêm Locket PD.Kane vào màn hình chính ngay hôm nay và khám
             phá thế giới photography & videography đầy màu sắc!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -208,14 +197,6 @@ const Home = () => {
               <Download className="w-5 h-5" />
               Cài đặt miễn phí
             </Link>
-            <a
-              href="https://discord.gg/47buy9nMGc"
-              target="_blank"
-              className="px-8 py-4 bg-white/20 text-white font-bold rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm"
-            >
-              <UserPlus className="w-5 h-5" />
-              Tham gia Discord
-            </a>
           </div>
 
           <div className="mt-8 text-white/60 text-sm">

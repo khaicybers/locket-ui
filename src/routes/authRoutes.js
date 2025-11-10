@@ -21,11 +21,11 @@ const ErrorReferencePage = React.lazy(() => import("../pages/Public/ErrorReferen
 const Contact = React.lazy(() => import("../pages/Public/Contact"));
 const PrivacyPolicy = React.lazy(() => import("../pages/Public/PrivacyPolicy"));
 
-const APP_NAME = "Locket Dio - Đăng ảnh & Video lên Locket";
+const APP_NAME = "Locket PD.Kane - Đăng ảnh & Video lên Locket";
 
 export const authRoutes = [
   { path: "/home", component: AuthHome, title: `Trang chủ | ${APP_NAME}` },
-  { path: "/aboutdio", component: AboutMe, title: `Về Dio | ${APP_NAME}` },
+  { path: "/aboutdio", component: AboutMe, title: `về Duy Khải | ${APP_NAME}` },
   { path: "/timeline", component: Timeline, title: `Dòng Thời Gian | ${APP_NAME}` },
   { path: "/sponsors", component: DonatePage, title: `Ủng hộ dự án | ${APP_NAME}` },
 

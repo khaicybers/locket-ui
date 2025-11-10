@@ -82,7 +82,7 @@ const NotificationPrompt = () => {
       />
       <div className="flex-1">
         <p className="font-medium mb-2">
-          Bạn có muốn nhận thông báo từ Locket Dio?
+          Bạn có muốn nhận thông báo từ Locket PD.Kane?
         </p>
         <div className="flex gap-2 justify-end mt-3">
           <button

@@ -218,7 +218,7 @@ const Login = () => {
               )}
             </button>
 
-            <Turnstile
+             <Turnstile
               sitekey="0x4AAAAAABgqVepYlILrC753"
               onVerify={(token) => setCaptchaToken(token)}
               onExpire={() => {
@@ -229,7 +229,7 @@ const Login = () => {
                 );
               }}
               className="mt-2"
-            />
+            /> 
 
             <span className="text-xs">Vui lòng chờ Server02 khởi động.</span>
             <StatusServer />

@@ -20,14 +20,14 @@ const ErrorReferencePage = React.lazy(() => import("../pages/Public/ErrorReferen
 const AuthHome = React.lazy(() => import("../pages/Auth/Home"));
 const ReferencePage = React.lazy(() => import("../pages/Public/APIDocs"));
 
-const APP_NAME = "Locket Dio - Đăng ảnh & Video lên Locket";
+const APP_NAME = "Locket PD.Kane - Đăng ảnh & Video lên Locket";
 
 export const publicRoutes = [
   { path: "/", component: Home, title: `Trang Chủ | ${APP_NAME}` },
   { path: "/login", component: Login, title: `Đăng Nhập | ${APP_NAME}` },
 
-  { path: "/about", component: AboutLocketDio, title: `Về Website Locket Dio | ${APP_NAME}` },
-  { path: "/about-dio", component: AboutMe, title: `Về Dio | ${APP_NAME}` },
+  { path: "/about", component: AboutLocketDio, title: `Về Website Locket PD.Kane | ${APP_NAME}` },
+  { path: "/about-dio", component: AboutMe, title: `về Duy Khải | ${APP_NAME}` },
   { path: "/download", component: AddToHomeScreenGuide, title: `Thêm ứng dụng vào màn hình chính | ${APP_NAME}` },
   { path: "/timeline", component: Timeline, title: `Dòng Thời Gian | ${APP_NAME}` },
 

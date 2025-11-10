@@ -114,11 +114,11 @@ const ContactSupportButton = () => {
               <div className="flex flex-col items-center">
                 <img
                   src="/apple-touch-icon.png"
-                  alt="Locket Dio"
+                  alt="Locket PD.Kane"
                   className="w-12 h-12 rounded-xl border border-gray-200"
                 />
                 <span className="text-xs text-base-content mt-1 font-semibold">
-                  Locket Dio
+                  Locket PD.Kane
                 </span>
               </div>
 
@@ -159,9 +159,7 @@ const ContactSupportButton = () => {
                 {/* Services */}
                 <div className="bg-base-100 rounded-lg p-4 mb-4">
                   <div className="text-sm text-base-content space-y-1">
-                    <p>🔹 Dịch vụ MXH (FB, IG, TikTok)</p>
-                    <p>🔹 Up Locket Gold & Premium Apps</p>
-                    <p>🔹 Netflix, YouTube, Spotify...</p>
+                    <p>🔹 Dịch vụ WEB </p>
                   </div>
                   <div className="text-center mt-3 text-blue-600 font-medium text-sm">
                     ⭐ Uy tín • Nhanh chóng • Giá tốt ⭐
@@ -202,16 +200,6 @@ const ContactSupportButton = () => {
                       </span>
                     </button>
                   </div>
-                </div>
-
-                {/* Community */}
-                <div className="text-center">
-                  <button
-                    onClick={handleZaloCommunity}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors"
-                  >
-                    🌐 Tham gia cộng đồng Zalo
-                  </button>
                 </div>
               </>
             )}

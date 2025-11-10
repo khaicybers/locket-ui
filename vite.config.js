@@ -16,9 +16,9 @@ import { defineConfig } from "vite";
        registerType: "autoUpdate",
        includeAssets: ["favicon.ico", "apple-touch-icon.png", "maskable-icon-512x512.png"],
        manifest: {
-         name: "Locket Dio",
-         short_name: "Locket Dio",
-         description: "Locket Dio - Đăng ảnh & Video lên Locket",
+         name: "Locket PD.Kane",
+         short_name: "Locket PD.Kane",
+         description: "Locket PD.Kane - Đăng ảnh & Video lên Locket",
          display: "standalone",
          scope: "/",
          start_url: "/",

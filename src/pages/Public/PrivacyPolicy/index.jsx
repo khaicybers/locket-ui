@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
           <p>
             <strong>Company</strong> (referred to as either &quot;the
             Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
-            this Agreement) refers to Locket Dio.
+            this Agreement) refers to Locket PD.Kane.
           </p>
         </li>
         <li className="mb-4">
@@ -109,7 +109,7 @@ const PrivacyPolicy = () => {
         </li>
         <li className="mb-4">
           <p>
-            <strong>Website</strong> refers to Locket Dio, accessible from{" "}
+            <strong>Website</strong> refers to Locket PD.Kane, accessible from{" "}
             <a
               href="https://locket-dio.space"
               rel="external nofollow noopener"
@@ -529,7 +529,7 @@ const PrivacyPolicy = () => {
       </p>
       <ul className="list-disc ml-6">
         <li className="mb-4">
-          <p>By email: doibncm2003@gmail.com</p>
+          <p>By email: khaicybers@gmail.com</p>
         </li>
         <li className="mb-4">
           <p>
