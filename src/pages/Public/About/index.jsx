@@ -1,6 +1,6 @@
 import React from "react";
-import MockupiPhone from "@/components/ui/MockupiPhone";
-import FeatureList from "@/components/ui/FeatureList";
+import { MockupiPhone } from "@/components/UI/MockupiPhone";
+import FeatureList from "@/components/UI/FeatureList";
 
 export default function AboutLocketDio() {
   return (
