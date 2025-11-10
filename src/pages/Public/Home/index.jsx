@@ -10,7 +10,7 @@ import { Marquee } from "@/components/magicui/marquee";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 // Lazy load các component
-const FeatureCardMarquee = lazy(() => import("@/components/ui/Marquee/FeatureCardMarquee"));
+const FeatureCardMarquee = lazy(() => import("@/components/UI/Marquee/FeatureCardMarquee.jsx"));
 const StepsSection = lazy(() => import("./StepsSection"));
 
 // Tạo fallback inline thay vì import file không tồn tại
