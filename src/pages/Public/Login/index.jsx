@@ -7,7 +7,7 @@ import * as utils from "../../../utils";
 import LoadingRing from "@components/UI/Loading/ring";
 import StatusServer from "@components/UI/StatusServer";
 import { useApp } from "../../../context/AppContext";
-import FloatingNotification from "@components/ui/FloatingNotification";
+import { FloatingNotification } from "@components/UI/FloatingNotification";
 // import ReCAPTCHA from "react-google-recaptcha";
 import Turnstile from "react-turnstile";
 
