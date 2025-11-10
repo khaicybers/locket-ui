@@ -32,7 +32,7 @@ import { clearMoments } from "@/cache/momentDB";
 import { MenuItem } from "./MenuItem";
 import { AuthButton } from "./AuthButton";
 import ThemeToggle from "./ThemeToggle";
-import PlanBadge from "../ui/PlanBadge/PlanBadge";
+import PlanBadge from "../UI/PlanBadge/PlanBadge";
 
 const Sidebar = () => {
   const { user, resetAuthContext } = useContext(AuthContext);
