@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Check, RotateCcw } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useApp } from "@/context/AppContext";
-import LoadingOverlay from "@/components/ui/Loading/LineSpinner";
+import LoadingOverlay from "@/components/UI/Loading/LineSpinner";
 
 const UploadingQueue = ({
   payloads = [],

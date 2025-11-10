@@ -6,7 +6,7 @@ import { FaUserFriends, FaSearchPlus } from "react-icons/fa";
 import { FindFriendByUserName, refreshFriends, removeFriend } from "@/services";
 import LoadingRing from "@/components/UI/Loading/ring";
 import FriendItem from "./FriendItem";
-import SearchInput from "@/components/ui/Input/SearchInput";
+import SearchInput from "@/components/UI/Input/SearchInput";
 import { showError } from "@/components/Toast";
 import FriendFind from "./FriendFind";
 import IncomingFriendRequests from "./IncomingRequests";

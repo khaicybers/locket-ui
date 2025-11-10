@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useApp } from "@/context/AppContext";
 import { Check, RotateCcw, X } from "lucide-react";
 import * as utils from "@/utils";
-import LoadingOverlay from "@/components/ui/Loading/LineSpinner";
+import LoadingOverlay from "@/components/UI/Loading/LineSpinner";
 import { showError, showInfo, showSuccess } from "@/components/Toast";
 import { PostMoments } from "@/services";
 import BottomMenu from "../Layout/BottomMenu";

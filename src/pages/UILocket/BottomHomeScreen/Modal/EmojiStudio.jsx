@@ -3,7 +3,7 @@ import { SendReactMoment } from "@/services/LocketDioService/ActionMoments";
 import { showError, showSuccess } from "@/components/Toast";
 import { Laugh, X } from "lucide-react";
 import { allEmojis } from "@/constants/emojis";
-import PlanBadge from "@/components/ui/PlanBadge/PlanBadge";
+import PlanBadge from "@/components/UI/PlanBadge/PlanBadge";
 import { useApp } from "@/context/AppContext";
 
 const popularEmojis = allEmojis.slice(0, 20);

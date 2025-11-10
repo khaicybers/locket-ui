@@ -1,6 +1,6 @@
 import React from "react";
 import { Mail, MapPin } from "lucide-react";
-import MailForm from "@/components/ui/SupportForms/MailForm";
+import MailForm from "@/components/UI/SupportForms/MailForm";
 
 export default function Contact() {
   const communityLinks = [
