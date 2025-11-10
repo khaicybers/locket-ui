@@ -1,4 +1,4 @@
-// src/components/UI/NotificationPrompt.js
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL, urlBase64ToUint8Array } from "@/utils";
