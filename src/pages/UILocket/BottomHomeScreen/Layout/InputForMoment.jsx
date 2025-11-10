@@ -5,7 +5,7 @@ import { GetInfoMoment, SendMessageMoment, SendReactMoment } from "@/services";
 import { showError, showSuccess } from "@/components/Toast";
 import { getMomentById } from "@/cache/momentDB";
 import { AuthContext } from "@/context/AuthLocket";
-import LoadingRing from "@/components/ui/Loading/ring";
+import LoadingRing from "@/components/UI/Loading/ring";
 
 const LoadingActivityItem = () => (
   <li className="flex items-center gap-3 animate-pulse">

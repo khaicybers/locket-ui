@@ -5,7 +5,7 @@ import { useMoments } from "@/hooks/useMoments";
 import { showSuccess } from "@/components/Toast";
 import { useApp } from "@/context/AppContext";
 import { MAX_MOMENTS_DISPLAY_LIMIT } from "@/constants";
-import LoadingRing from "@/components/ui/Loading/ring";
+import LoadingRing from "@/components/UI/Loading/ring";
 
 const MomentsGrid = ({ visibleCount: initialVisibleCount }) => {
   const { post } = useApp();

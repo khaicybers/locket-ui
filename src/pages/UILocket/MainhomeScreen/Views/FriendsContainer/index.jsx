@@ -4,7 +4,7 @@ import { AuthContext } from "@/context/AuthLocket";
 import { RefreshCcw, X } from "lucide-react";
 import { FaUserFriends, FaSearchPlus } from "react-icons/fa";
 import { FindFriendByUserName, refreshFriends, removeFriend } from "@/services";
-import LoadingRing from "@/components/ui/Loading/ring";
+import LoadingRing from "@/components/UI/Loading/ring";
 import FriendItem from "./FriendItem";
 import SearchInput from "@/components/ui/Input/SearchInput";
 import { showError } from "@/components/Toast";

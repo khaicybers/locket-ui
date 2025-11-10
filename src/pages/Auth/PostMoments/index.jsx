@@ -16,7 +16,7 @@ import {
 import { showError, showToast } from "@/components/Toast/index.jsx";
 import * as utils from "@/utils";
 import * as services from "@/services";
-import LoadingRing from "@/components/ui/Loading/ring.jsx";
+import LoadingRing from "@/components/UI/Loading/ring.jsx";
 import { useApp } from "@/context/AppContext.jsx";
 import { Link } from "react-router-dom";
 import Hourglass from "@/components/ui/Loading/hourglass.jsx";
