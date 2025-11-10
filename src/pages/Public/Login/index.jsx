@@ -4,10 +4,10 @@ import { showError, showToast } from "../../../components/Toast";
 import * as DioService from "../../../services/LocketDioService";
 import { AuthContext } from "../../../context/AuthLocket";
 import * as utils from "../../../utils";
-import LoadingRing from "../../../components/UI/Loading/ring";
+import LoadingRing from "@components/UI/Loading/ring";
 import StatusServer from "../../../components/UI/StatusServer";
 import { useApp } from "../../../context/AppContext";
-import FloatingNotification from "@components/ui/FloatingNotification/index.jsx";
+import FloatingNotification from "@components/ui/FloatingNotification";
 // import ReCAPTCHA from "react-google-recaptcha";
 import Turnstile from "react-turnstile";
 
