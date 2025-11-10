@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import LoadingPage from "@/components/pages/LoadingPage.jsx";
-import MainHomeScreen from "./MainHomeScreen";
+import MainHomeScreen from "@/pages/UILocket/MainHomeScreen";
 
 // Lazy load các phần nặng
 const LeftHomeScreen = lazy(() => import("./LeftHomeScreen"));
