@@ -1,3 +1,4 @@
+"use client";
 import { useState, useContext, useEffect } from "react";
 import { showError, showToast } from "../../../components/Toast";
 import * as DioService from "../../../services/LocketDioService";
@@ -6,7 +7,7 @@ import * as utils from "../../../utils";
 import LoadingRing from "../../../components/UI/Loading/ring";
 import StatusServer from "../../../components/UI/StatusServer";
 import { useApp } from "../../../context/AppContext";
-import FloatingNotification from "../../../components/ui/FloatingNotification/index.jsx";
+import FloatingNotification from "@components/ui/FloatingNotification/index.jsx";
 // import ReCAPTCHA from "react-google-recaptcha";
 import Turnstile from "react-turnstile";
 
